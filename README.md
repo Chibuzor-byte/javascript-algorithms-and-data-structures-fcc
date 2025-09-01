@@ -32,13 +32,13 @@ The course is divided into several modules:
 
 I am currently progressing through the course and will be updating this repository as I complete more modules and projects.
 
-* [x] Basic JavaScript
-* [ ] ES6
-* [ ] Regular Expressions
-* [ ] Debugging
-* [ ] Basic Data Structures
-* [ ] Basic Algorithm Scripting
-* [ ] OOP
+* [x] Learn Introductory JavaScript by Building a Pyramid Generator
+* [x] Review JavaScript Fundamentals by Building a Gradebook App
+* [x] Learn Basic JavaScript by Building a Role Playing Game
+* [x] Learn Basic Debugging by Building a Random Background Color Changer
+* [x] Learn Form Validation by Building a Calorie Counter
+* [x] Review DOM Manipulation by Building a Rock, Paper, Scissors Game
+* [ ]Learn Basic String and Array Methods by Building a Music Player
 * [ ] Functional Programming
 * [ ] Intermediate Algorithm Scripting
 * [ ] Projects
