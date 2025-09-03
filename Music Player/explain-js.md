@@ -17,7 +17,7 @@ const shuffleButton = document.getElementById("shuffle");
 - `document.getElementById()` returns the first element with the matching id.
 - Example: `playlistSongs` will refer to the `<ul>` or `<div>` that will contain all the songs.
 
-## 🎵 Defining all songs
+## 🎵 2. Defining all songs
 
 ```js
 const allSongs = [
