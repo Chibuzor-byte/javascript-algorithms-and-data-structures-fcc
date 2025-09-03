@@ -1,10 +1,8 @@
 # 📜 JavaScript Logic (Music Player)
 
-This document explains only the **JavaScript functionality** of the music player.  
+This document explains only the **JavaScript functionality** of the **music player**.  
 
----
-
-## 🔑 Variables & Elements
+## 🔑 1. Variables & Elements
 
 ```js
 const playlistSongs = document.getElementById("playlist-songs");
@@ -19,7 +17,7 @@ const shuffleButton = document.getElementById("shuffle");
 - `document.getElementById()` returns the first element with the matching id.
 - Example: `playlistSongs` will refer to the `<ul>` or `<div>` that will contain all the songs.
 
-## Defining all songs
+## 🎵 Defining all songs
 
 ```js
 const allSongs = [
@@ -44,7 +42,7 @@ const allSongs = [
       - `src` – URL of the audio file
   
 
-## 3. Creating an Audio object and user data
+## 🔊 3. Creating an Audio object and user data
 
 ```js
 const audio = new Audio();
@@ -66,7 +64,7 @@ let userData = {
 
     - `songCurrentTime` – remembers where playback was paused
 
-## 4. Function to play a song
+## ▶️ 4. Function to play a song
 
 ```js
 const playSong = (id) => {
@@ -102,7 +100,7 @@ const playSong = (id) => {
 
 - Adds a CSS class `"playing"` to the play button for styling.
 
-## 5. Function to pause a song
+## 📝 5. Function to pause a song
 
 ```js
 const pauseSong = () => {
@@ -119,7 +117,7 @@ const pauseSong = () => {
 
 - Calls `audio.pause()` to stop playback.
 
-## 6. Function to render songs in HTML
+## 🔤 6. Function to render songs in HTML
 ```js
 const renderSongs = (array) => {
   const songsHTML = array
@@ -152,7 +150,7 @@ const renderSongs = (array) => {
 
 ```
 
-## 7. Function to sort songs alphabetically
+## 🎚️ 7. Function to sort songs alphabetically
 
 ```js
 const sortSongs = () => {
@@ -169,7 +167,7 @@ const sortSongs = () => {
 
 - Returns the sorted array for rendering.
 
-## 8. Get index of current song
+## 📍 8. Get index of current song
 
 ```js
 const getCurrentSongIndex = () =>
@@ -177,7 +175,7 @@ userData?.songs.indexOf(userData?.currentSong);
 
 ```
 
-## 9. Next and Previous buttons
+## 🖱️ 9. Next and Previous buttons
 
 ```js
 nextButton.addEventListener("click", () => {
@@ -201,7 +199,7 @@ previousButton.addEventListener("click", () => {
 
 Uses `getCurrentSongIndex()` to check where you are in the list.
 
-## 10. Play & Pause button listeners
+## 📑 10. Play & Pause button listeners
 
 ```js
 playButton.addEventListener("click", () => {
@@ -222,7 +220,7 @@ pauseButton.addEventListener("click", pauseSong);
 
 **Pause button** calls pauseSong().
 
-## 11. Initial rendering
+## 🏁 11. Initial rendering
 
 ```js
 renderSongs(sortSongs());
